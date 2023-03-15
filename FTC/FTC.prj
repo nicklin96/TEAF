@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="ASCII"?>
+<openclProject:OpenCLProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:openclProject="http://www.xilinx.com/openclproject" name="FTC" location="/home/haihe/workspace/FTC" platform="/opt/xilinx/platforms/xilinx_u200_xdma_201830_2/xilinx_u200_xdma_201830_2.xpfm" platformUID="xilinx:u200:xdma:201830.2" systemProject="FTC_system" sysConfig="config0_0" cpu="x86" cpuInstance="x86" os="Linux" deviceCount="3">
+  <configuration name="Emulation-SW" id="com.xilinx.accelerated.config.sw_emu.1792578760">
+    <configBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true">
+      <binaryContainers name="binary_container_1" traceMemory="FIFO:8K">
+        <kernels name="HHTriCount" sourceFile="src/HHTriCount.cpp">
+          <computeUnits name="HHTriCount_1" slr="">
+            <args name="heavy_offset_left" master="true" memory="DDR[0]"/>
+            <args name="heavy_bid_left" master="true" memory="DDR[1]"/>
+            <args name="heavy_value_left" master="true" memory="DDR[1]"/>
+            <args name="heavy_offset_right" master="true" memory="DDR[0]"/>
+            <args name="heavy_bid_right" master="true" memory="DDR[2]"/>
+            <args name="heavy_value_right" master="true" memory="DDR[2]"/>
+            <args name="task_left" master="true" memory="DDR[3]"/>
+            <args name="task_right" master="true" memory="DDR[3]"/>
+            <args name="task_num" memory=""/>
+            <args name="output" master="true" memory="DDR[3]"/>
+          </computeUnits>
+          <args name="heavy_offset_left" master="true"/>
+          <args name="heavy_bid_left" master="true"/>
+          <args name="heavy_value_left" master="true"/>
+          <args name="heavy_offset_right" master="true"/>
+          <args name="heavy_bid_right" master="true"/>
+          <args name="heavy_value_right" master="true"/>
+          <args name="task_left" master="true"/>
+          <args name="task_right" master="true"/>
+          <args name="task_num"/>
+          <args name="output" master="true"/>
+        </kernels>
+      </binaryContainers>
+      <binaryContainers name="binary_container_2">
+        <kernels name="HLTriCount" sourceFile="src/HLTriCount.cpp">
+          <computeUnits name="HLTriCount_1" slr="">
+            <args name="light_offset_left" master="true" memory="DDR[0]"/>
+            <args name="light_adj_left" master="true" memory="DDR[1]"/>
+            <args name="heavy_offset_right" master="true" memory="DDR[0]"/>
+            <args name="heavy_bid_right" master="true" memory="DDR[2]"/>
+            <args name="heavy_value_right" master="true" memory="DDR[2]"/>
+            <args name="task_left" master="true" memory="DDR[3]"/>
+            <args name="task_right" master="true" memory="DDR[3]"/>
+            <args name="task_num" memory=""/>
+            <args name="output" master="true" memory="DDR[3]"/>
+          </computeUnits>
+          <args name="light_offset_left" master="true"/>
+          <args name="light_adj_left" master="true"/>
+          <args name="heavy_offset_right" master="true"/>
+          <args name="heavy_bid_right" master="true"/>
+          <args name="heavy_value_right" master="true"/>
+          <args name="task_left" master="true"/>
+          <args name="task_right" master="true"/>
+          <args name="task_num"/>
+          <args name="output" master="true"/>
+        </kernels>
+      </binaryContainers>
+      <binaryContainers name="binary_container_3" traceMemory="FIFO:8K">
+        <kernels name="LLTriCount" sourceFile="src/LLTriCount.cpp">
+          <computeUnits name="LLTriCount_1" slr="">
+            <args name="light_offset_left" master="true" memory="DDR[0]"/>
+            <args name="light_adj_left" master="true" memory="DDR[1]"/>
+            <args name="light_offset_right" master="true" memory="DDR[0]"/>
+            <args name="light_adj_right" master="true" memory="DDR[2]"/>
+            <args name="task_left" master="true" memory="DDR[3]"/>
+            <args name="task_right" master="true" memory="DDR[3]"/>
+            <args name="task_num" memory=""/>
+            <args name="output" master="true" memory="DDR[3]"/>
+          </computeUnits>
+          <args name="light_offset_left" master="true"/>
+          <args name="light_adj_left" master="true"/>
+          <args name="light_offset_right" master="true"/>
+          <args name="light_adj_right" master="true"/>
+          <args name="task_left" master="true"/>
+          <args name="task_right" master="true"/>
+          <args name="task_num"/>
+          <args name="output" master="true"/>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true">
+      <binaryContainers name="binary_container_1" traceMemory="FIFO:8K">
+        <kernels name="HHTriCount" sourceFile="src/HHTriCount.cpp">
+          <computeUnits name="HHTriCount_1" slr="">
+            <args name="heavy_offset_left" master="true" memory="DDR[0]"/>
+            <args name="heavy_bid_left" master="true" memory="DDR[1]"/>
+            <args name="heavy_value_left" master="true" memory="DDR[1]"/>
+            <args name="heavy_offset_right" master="true" memory="DDR[0]"/>
+            <args name="heavy_bid_right" master="true" memory="DDR[2]"/>
+            <args name="heavy_value_right" master="true" memory="DDR[2]"/>
+            <args name="task_left" master="true" memory="DDR[3]"/>
+            <args name="task_right" master="true" memory="DDR[3]"/>
+            <args name="task_num" memory=""/>
+            <args name="output" master="true" memory="DDR[3]"/>
+          </computeUnits>
+          <args name="heavy_offset_left" master="true"/>
+          <args name="heavy_bid_left" master="true"/>
+          <args name="heavy_value_left" master="true"/>
+          <args name="heavy_offset_right" master="true"/>
+          <args name="heavy_bid_right" master="true"/>
+          <args name="heavy_value_right" master="true"/>
+          <args name="task_left" master="true"/>
+          <args name="task_right" master="true"/>
+          <args name="task_num"/>
+          <args name="output" master="true"/>
+        </kernels>
+      </binaryContainers>
+      <binaryContainers name="binary_container_2">
+        <kernels name="HLTriCount" sourceFile="src/HLTriCount.cpp">
+          <computeUnits name="HLTriCount_1" slr="">
+            <args name="light_offset_left" master="true" memory="DDR[0]"/>
+            <args name="light_adj_left" master="true" memory="DDR[1]"/>
+            <args name="heavy_offset_right" master="true" memory="DDR[0]"/>
+            <args name="heavy_bid_right" master="true" memory="DDR[2]"/>
+            <args name="heavy_value_right" master="true" memory="DDR[2]"/>
+            <args name="task_left" master="true" memory="DDR[3]"/>
+            <args name="task_right" master="true" memory="DDR[3]"/>
+            <args name="task_num" memory=""/>
+            <args name="output" master="true" memory="DDR[3]"/>
+          </computeUnits>
+          <args name="light_offset_left" master="true"/>
+          <args name="light_adj_left" master="true"/>
+          <args name="heavy_offset_right" master="true"/>
+          <args name="heavy_bid_right" master="true"/>
+          <args name="heavy_value_right" master="true"/>
+          <args name="task_left" master="true"/>
+          <args name="task_right" master="true"/>
+          <args name="task_num"/>
+          <args name="output" master="true"/>
+        </kernels>
+      </binaryContainers>
+      <binaryContainers name="binary_container_3" traceMemory="FIFO:8K">
+        <kernels name="LLTriCount" sourceFile="src/LLTriCount.cpp">
+          <computeUnits name="LLTriCount_1" slr="">
+            <args name="light_offset_left" master="true" memory="DDR[0]"/>
+            <args name="light_adj_left" master="true" memory="DDR[1]"/>
+            <args name="light_offset_right" master="true" memory="DDR[0]"/>
+            <args name="light_adj_right" master="true" memory="DDR[2]"/>
+            <args name="task_left" master="true" memory="DDR[3]"/>
+            <args name="task_right" master="true" memory="DDR[3]"/>
+            <args name="task_num" memory=""/>
+            <args name="output" master="true" memory="DDR[3]"/>
+          </computeUnits>
+          <args name="light_offset_left" master="true"/>
+          <args name="light_adj_left" master="true"/>
+          <args name="light_offset_right" master="true"/>
+          <args name="light_adj_right" master="true"/>
+          <args name="task_left" master="true"/>
+          <args name="task_right" master="true"/>
+          <args name="task_num"/>
+          <args name="output" master="true"/>
+        </kernels>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Emulation-HW" id="com.xilinx.accelerated.config.hw_emu.1351716384" dirty="true">
+    <configBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true" target="hw_emu">
+      <binaryContainers name="binary_container_1" traceMemory="FIFO:8K">
+        <kernels name="HHTriCount" sourceFile="src/HHTriCount.cpp">
+          <computeUnits name="HHTriCount_1" slr="">
+            <args name="heavy_offset_left" master="true" memory="DDR[0]"/>
+            <args name="heavy_bid_left" master="true" memory="DDR[1]"/>
+            <args name="heavy_value_left" master="true" memory="DDR[1]"/>
+            <args name="heavy_offset_right" master="true" memory="DDR[0]"/>
+            <args name="heavy_bid_right" master="true" memory="DDR[2]"/>
+            <args name="heavy_value_right" master="true" memory="DDR[2]"/>
+            <args name="task_left" master="true" memory="DDR[3]"/>
+            <args name="task_right" master="true" memory="DDR[3]"/>
+            <args name="task_num" memory=""/>
+            <args name="output" master="true" memory="DDR[3]"/>
+          </computeUnits>
+          <args name="heavy_offset_left" master="true"/>
+          <args name="heavy_bid_left" master="true"/>
+          <args name="heavy_value_left" master="true"/>
+          <args name="heavy_offset_right" master="true"/>
+          <args name="heavy_bid_right" master="true"/>
+          <args name="heavy_value_right" master="true"/>
+          <args name="task_left" master="true"/>
+          <args name="task_right" master="true"/>
+          <args name="task_num"/>
+          <args name="output" master="true"/>
+        </kernels>
+      </binaryContainers>
+      <binaryContainers name="binary_container_2">
+        <kernels name="HLTriCount" sourceFile="src/HLTriCount.cpp">
+          <computeUnits name="HLTriCount_1" slr="">
+            <args name="light_offset_left" master="true" memory="DDR[0]"/>
+            <args name="light_adj_left" master="true" memory="DDR[1]"/>
+            <args name="heavy_offset_right" master="true" memory="DDR[0]"/>
+            <args name="heavy_bid_right" master="true" memory="DDR[2]"/>
+            <args name="heavy_value_right" master="true" memory="DDR[2]"/>
+            <args name="task_left" master="true" memory="DDR[3]"/>
+            <args name="task_right" master="true" memory="DDR[3]"/>
+            <args name="task_num" memory=""/>
+            <args name="output" master="true" memory="DDR[3]"/>
+          </computeUnits>
+          <args name="light_offset_left" master="true"/>
+          <args name="light_adj_left" master="true"/>
+          <args name="heavy_offset_right" master="true"/>
+          <args name="heavy_bid_right" master="true"/>
+          <args name="heavy_value_right" master="true"/>
+          <args name="task_left" master="true"/>
+          <args name="task_right" master="true"/>
+          <args name="task_num"/>
+          <args name="output" master="true"/>
+        </kernels>
+      </binaryContainers>
+      <binaryContainers name="binary_container_3" traceMemory="FIFO:8K">
+        <kernels name="LLTriCount" sourceFile="src/LLTriCount.cpp">
+          <computeUnits name="LLTriCount_1" slr="">
+            <args name="light_offset_left" master="true" memory="DDR[0]"/>
+            <args name="light_adj_left" master="true" memory="DDR[1]"/>
+            <args name="light_offset_right" master="true" memory="DDR[0]"/>
+            <args name="light_adj_right" master="true" memory="DDR[2]"/>
+            <args name="task_left" master="true" memory="DDR[3]"/>
+            <args name="task_right" master="true" memory="DDR[3]"/>
+            <args name="task_num" memory=""/>
+            <args name="output" master="true" memory="DDR[3]"/>
+          </computeUnits>
+          <args name="light_offset_left" master="true"/>
+          <args name="light_adj_left" master="true"/>
+          <args name="light_offset_right" master="true"/>
+          <args name="light_adj_right" master="true"/>
+          <args name="task_left" master="true"/>
+          <args name="task_right" master="true"/>
+          <args name="task_num"/>
+          <args name="output" master="true"/>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+  </configuration>
+  <configuration name="Hardware" id="com.xilinx.accelerated.config.hw.997185674" dirty="true">
+    <configBuildOptions xsi:type="openclProject:OpenCLOptions" hardwareOptimizationLevel="O_3" reportLevel="0" target="hw">
+      <binaryContainers name="binary_container_1" traceMemory="FIFO:8K">
+        <kernels name="HHTriCount" sourceFile="src/HHTriCount.cpp">
+          <computeUnits name="HHTriCount_1" slr="">
+            <args name="heavy_offset_left" master="true" memory="DDR[0]"/>
+            <args name="heavy_bid_left" master="true" memory="DDR[1]"/>
+            <args name="heavy_value_left" master="true" memory="DDR[1]"/>
+            <args name="heavy_offset_right" master="true" memory="DDR[0]"/>
+            <args name="heavy_bid_right" master="true" memory="DDR[2]"/>
+            <args name="heavy_value_right" master="true" memory="DDR[2]"/>
+            <args name="task_left" master="true" memory="DDR[3]"/>
+            <args name="task_right" master="true" memory="DDR[3]"/>
+            <args name="task_num" memory=""/>
+            <args name="output" master="true" memory="DDR[3]"/>
+          </computeUnits>
+          <args name="heavy_offset_left" master="true"/>
+          <args name="heavy_bid_left" master="true"/>
+          <args name="heavy_value_left" master="true"/>
+          <args name="heavy_offset_right" master="true"/>
+          <args name="heavy_bid_right" master="true"/>
+          <args name="heavy_value_right" master="true"/>
+          <args name="task_left" master="true"/>
+          <args name="task_right" master="true"/>
+          <args name="task_num"/>
+          <args name="output" master="true"/>
+        </kernels>
+      </binaryContainers>
+      <binaryContainers name="binary_container_2">
+        <kernels name="HLTriCount" sourceFile="src/HLTriCount.cpp">
+          <computeUnits name="HLTriCount_1" slr="">
+            <args name="light_offset_left" master="true" memory="DDR[0]"/>
+            <args name="light_adj_left" master="true" memory="DDR[1]"/>
+            <args name="heavy_offset_right" master="true" memory="DDR[0]"/>
+            <args name="heavy_bid_right" master="true" memory="DDR[2]"/>
+            <args name="heavy_value_right" master="true" memory="DDR[2]"/>
+            <args name="task_left" master="true" memory="DDR[3]"/>
+            <args name="task_right" master="true" memory="DDR[3]"/>
+            <args name="task_num" memory=""/>
+            <args name="output" master="true" memory="DDR[3]"/>
+          </computeUnits>
+          <args name="light_offset_left" master="true"/>
+          <args name="light_adj_left" master="true"/>
+          <args name="heavy_offset_right" master="true"/>
+          <args name="heavy_bid_right" master="true"/>
+          <args name="heavy_value_right" master="true"/>
+          <args name="task_left" master="true"/>
+          <args name="task_right" master="true"/>
+          <args name="task_num"/>
+          <args name="output" master="true"/>
+        </kernels>
+      </binaryContainers>
+      <binaryContainers name="binary_container_3" traceMemory="FIFO:8K">
+        <kernels name="LLTriCount" sourceFile="src/LLTriCount.cpp">
+          <computeUnits name="LLTriCount_1" slr="">
+            <args name="light_offset_left" master="true" memory="DDR[0]"/>
+            <args name="light_adj_left" master="true" memory="DDR[1]"/>
+            <args name="light_offset_right" master="true" memory="DDR[0]"/>
+            <args name="light_adj_right" master="true" memory="DDR[2]"/>
+            <args name="task_left" master="true" memory="DDR[3]"/>
+            <args name="task_right" master="true" memory="DDR[3]"/>
+            <args name="task_num" memory=""/>
+            <args name="output" master="true" memory="DDR[3]"/>
+          </computeUnits>
+          <args name="light_offset_left" master="true"/>
+          <args name="light_adj_left" master="true"/>
+          <args name="light_offset_right" master="true"/>
+          <args name="light_adj_right" master="true"/>
+          <args name="task_left" master="true"/>
+          <args name="task_right" master="true"/>
+          <args name="task_num"/>
+          <args name="output" master="true"/>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="openclProject:OpenCLOptions" hardwareOptimizationLevel="O_3" reportLevel="0" target="hw">
+      <binaryContainers name="binary_container_1" traceMemory="FIFO:8K">
+        <kernels name="HHTriCount" sourceFile="src/HHTriCount.cpp">
+          <computeUnits name="HHTriCount_1" slr="">
+            <args name="heavy_offset_left" master="true" memory="DDR[0]"/>
+            <args name="heavy_bid_left" master="true" memory="DDR[1]"/>
+            <args name="heavy_value_left" master="true" memory="DDR[1]"/>
+            <args name="heavy_offset_right" master="true" memory="DDR[0]"/>
+            <args name="heavy_bid_right" master="true" memory="DDR[2]"/>
+            <args name="heavy_value_right" master="true" memory="DDR[2]"/>
+            <args name="task_left" master="true" memory="DDR[3]"/>
+            <args name="task_right" master="true" memory="DDR[3]"/>
+            <args name="task_num" memory=""/>
+            <args name="output" master="true" memory="DDR[3]"/>
+          </computeUnits>
+          <args name="heavy_offset_left" master="true"/>
+          <args name="heavy_bid_left" master="true"/>
+          <args name="heavy_value_left" master="true"/>
+          <args name="heavy_offset_right" master="true"/>
+          <args name="heavy_bid_right" master="true"/>
+          <args name="heavy_value_right" master="true"/>
+          <args name="task_left" master="true"/>
+          <args name="task_right" master="true"/>
+          <args name="task_num"/>
+          <args name="output" master="true"/>
+        </kernels>
+      </binaryContainers>
+      <binaryContainers name="binary_container_2">
+        <kernels name="HLTriCount" sourceFile="src/HLTriCount.cpp" maxMemoryPorts="true">
+          <computeUnits name="HLTriCount_1" slr="">
+            <args name="light_offset_left" master="true" memory="DDR[0]"/>
+            <args name="light_adj_left" master="true" memory="DDR[1]"/>
+            <args name="heavy_offset_right" master="true" memory="DDR[0]"/>
+            <args name="heavy_bid_right" master="true" memory="DDR[2]"/>
+            <args name="heavy_value_right" master="true" memory="DDR[2]"/>
+            <args name="task_left" master="true" memory="DDR[3]"/>
+            <args name="task_right" master="true" memory="DDR[3]"/>
+            <args name="task_num" memory=""/>
+            <args name="output" master="true" memory="DDR[3]"/>
+          </computeUnits>
+          <args name="light_offset_left" master="true"/>
+          <args name="light_adj_left" master="true"/>
+          <args name="heavy_offset_right" master="true"/>
+          <args name="heavy_bid_right" master="true"/>
+          <args name="heavy_value_right" master="true"/>
+          <args name="task_left" master="true"/>
+          <args name="task_right" master="true"/>
+          <args name="task_num"/>
+          <args name="output" master="true"/>
+        </kernels>
+      </binaryContainers>
+      <binaryContainers name="binary_container_3" traceMemory="FIFO:8K">
+        <kernels name="LLTriCount" sourceFile="src/LLTriCount.cpp">
+          <computeUnits name="LLTriCount_1" slr="">
+            <args name="light_offset_left" master="true" memory="DDR[0]"/>
+            <args name="light_adj_left" master="true" memory="DDR[1]"/>
+            <args name="light_offset_right" master="true" memory="DDR[0]"/>
+            <args name="light_adj_right" master="true" memory="DDR[2]"/>
+            <args name="task_left" master="true" memory="DDR[3]"/>
+            <args name="task_right" master="true" memory="DDR[3]"/>
+            <args name="task_num" memory=""/>
+            <args name="output" master="true" memory="DDR[3]"/>
+          </computeUnits>
+          <args name="light_offset_left" master="true"/>
+          <args name="light_adj_left" master="true"/>
+          <args name="light_offset_right" master="true"/>
+          <args name="light_adj_right" master="true"/>
+          <args name="task_left" master="true"/>
+          <args name="task_right" master="true"/>
+          <args name="task_num"/>
+          <args name="output" master="true"/>
+        </kernels>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+</openclProject:OpenCLProject>

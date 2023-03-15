@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Apr 29 14:33:30 2021
+# Process ID: 415913
+# Current directory: /home/haihe/workspace/FTC/vivado_rtl_kernel
+# Command line: vivado -mode batch -source /tmp/vivado.2150676569429136587.tmp -notrace
+# Log file: /home/haihe/workspace/FTC/vivado_rtl_kernel/vivado.log
+# Journal file: /home/haihe/workspace/FTC/vivado_rtl_kernel/vivado.jou
+#-----------------------------------------------------------
+source /tmp/vivado.2150676569429136587.tmp -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/haihe/Vivado/2020.1/data/ip'.
+start_ip_gui: Time (s): cpu = 00:01:13 ; elapsed = 00:00:25 . Memory (MB): peak = 7194.520 ; gain = 5068.734 ; free physical = 500597 ; free virtual = 508657
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 29 14:34:10 2021...
