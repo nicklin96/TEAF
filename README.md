@@ -1,5 +1,4 @@
-# ICDE23_SUBMISSION
-This is the code for ICDE 2023 SUBMISSION No.837
+# VLDBJ_SUBMISSION
 
 ## Input File Format
 The graph file format for data graphs and query graphs is a text format to store an undirected graph.
